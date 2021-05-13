@@ -197,18 +197,18 @@ clickableButtonHover = function () {
   this.tint = "#FF0000";
   this.width = 250;
   this.height = 50;
-  this.textSize = 18;
+  this.textSize = 20;
   this.textColor = "#FFFFFF";
   this.stroke = "FFFFFF";
 }
 
-// color a light gray if off
+// color an orange if off
 clickableButtonOnOutside = function () {
   // backto our gray color
-  this.color = "#AAAAAA";
+  this.color = "#FF1515";
   this.width = 250;
   this.height = 50;
-  this.textSize = 18;
+  this.textSize = 22;
   this.textColor = "#FFFFFF";
   this.stroke = "FFFFFF";
 }
