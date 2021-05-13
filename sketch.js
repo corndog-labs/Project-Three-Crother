@@ -25,63 +25,65 @@ var clickables;           // an array of clickable objects
 
 
 // indexes into the clickable array (constants) 
-const cl_startScenario = 0;
-const cl_Start_GoomazonPays = 1;
-const cl_Start_CityPays = 2;
-const cl_Start_RaiseTaxes = 3;
-const cl_GoomazonMoves_CityPays = 4;
-const cl_GoomazonMoves_RaiseTaxes = 5;
-const cl_GoomazonMoves_BuildRival = 6;
-const cl_GoomazonMoves_IgnoreThem = 7;
-const cl_CityPays_CutTheArts = 8;
-const cl_CityPays_CutTransportation = 9;
-const cl_CityPays_CutCityWages = 10;
-const cl_CityPays_CutParks = 11;
 
+const cl_Enter = 0;
+const cl_Option1 = 1;
+const cl_Option2 = 2; 
+const cl_Option3 = 3;
+const cl_Super = 4;
+const cl_Very = 5;
+const cl_Opt = 6;
+const cl_Both = 7;
+const cl_Opt1 = 8;
+const cl_Both1 = 9;
+const cl_Opt2 = 10;
+const cl_Back = 11;
+const cl_Nothing = 12;
+const cl_Ignore = 13;
+const cl_Upgrade = 14;
+const cl_Call = 15;
+const cl_Give = 16;
+const cl_Stay = 17;
+const cl_Fridge = 18
+const cl_Uninstall = 19;
+const cl_Lenny = 20;
+const cl_Question = 21; 
+const cl_Nothing2 = 22;
+const cl_Listen = 23; 
+const cl_Money = 24; 
+const cl_StartOver1 = 25;
+const cl_StartOver2 = 26;
+const cl_StartOver3 = 27; 
+const cl_StartOver4 = 28;
+const cl_StartOver5 = 29; 
 
-// anger emojis
-var angerImage;   // anger emoji
-var maxAnger = 5;
-
-// character arrays
-var characterImages = [];   // array of character images, keep global for future expansion
-var characters = [];        // array of charactes
-
-// characters
-const goomazon = 0;
-const mayor = 1;
-const bigLabor = 2;
-const nimby = 3;
-const treeHugger = 4;
-const consumer = 5;
 
 // room indices - look at adventureManager
-const splash = 0;
-const page1 = 1;
-const page2 = 2;
-const page3 = 3;
-const page4 = 4;
-const page5 = 5;
-const page6 = 6;
-const page7 = 7;
-const page8 = 8;
-const page9 = 9;
-const page10 = 10;
-const page11 = 11;
-const page12 = 12;
-const page13 = 13;
-const page14 = 14;
-const page15 = 15;
-const page16 = 16;
+const Splash = 0;
+const Page1 = 1;
+const Page2 = 2;
+const Page3 = 3;
+const Page4 = 4;
+const Page5 = 5;
+const Page6 = 6;
+const Page7 = 7;
+const Page8 = 8;
+const Page9 = 9;
+const Page10 = 10;
+const Page11 = 11;
+const Ending1 = 12;
+const Ending2 = 13;
+const Ending3 = 14;
+const Ending4 = 15;
+const Ending5 = 16;
 
 
+let headlineFont;
+let bodyFont;
 
 
 // Allocate Adventure Manager with states table and interaction tables
 function preload() {
-
-  // load all images  
-  allocateCharacters();
 
   clickablesManager = new ClickableManager('data/clickableLayout.csv');
   adventureManager = new AdventureManager('data/adventureStates.csv', 'data/interactionTable.csv', 'data/clickableLayout.csv');
@@ -100,9 +102,6 @@ function setup() {
 
   // This will load the images, go through state and interation tables, etc
   adventureManager.setup();
-
-  // load all text screens
-  loadAllText();
 
   // call OUR function to setup additional information about the p5.clickables
   // that are not in the array 
@@ -124,9 +123,7 @@ function draw() {
       adventureManager.getStateName() === "page2.png" ) {
     ;
   }
-  else {
-    drawCharacters();
-  }
+  
   
   // draw the p5.clickables, in front of the mazes but behind the sprites 
   clickablesManager.draw();
@@ -150,11 +147,6 @@ function mouseReleased() {
   adventureManager.mouseReleased();
 }
 
-function drawCharacters() {
-  for( let i = 0; i < characters.length; i++ ) {
-    characters[i].draw();
-  }
-}
 
 //-------------- CLICKABLE CODE  ---------------//
 
@@ -193,6 +185,9 @@ function setupClickables() {
   clickables[24].onPress = clickableButtonPressed;
   clickables[25].onPress = clickableButtonPressed;
   clickables[26].onPress = clickableButtonPressed;
+  clickables[27].onPress = clickableButtonPressed;
+  clickables[28].onPress = clickableButtonPressed;
+  clickables[29].onPress = clickableButtonPressed;
 }
 
 // tint when mouse is over

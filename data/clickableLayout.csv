@@ -23,9 +23,9 @@ ID,Name,State,PNGFilename,Text,x,y,visible
 21,Question,Page10,,?,1450,199,yes
 22,Nothing2,Page10,,Do nothing ,1450,406,yes
 23,Listen,Page11,,Listen to Lenny,1450,199,yes
-24,Money ,Page11,,Pay the money ,1450,406,yes
-,StartOver1,Ending1,,StartOver1,811,779,yes
-,StartOver2,Ending2,,StartOver2,811,779,yes
-,StartOver3,Ending3,,StartOver3,811,779,yes
-,StartOver4,Ending4,,StartOver4,811,779,yes
-,StartOver5,Ending5,,StartOver5,811,779,yes
+24,Money,Page11,,Pay the money ,1450,406,yes
+25,StartOver1,Ending1,,StartOver1,811,779,yes
+26,StartOver2,Ending2,,StartOver2,811,779,yes
+27,StartOver3,Ending3,,StartOver3,811,779,yes
+28,StartOver4,Ending4,,StartOver4,811,779,yes
+29,StartOver5,Ending5,,StartOver5,811,779,yes
