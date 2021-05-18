@@ -1,31 +1,32 @@
 ID,Name,State,PNGFilename,Text,x,y,visible
 0,Enter,Splash,,Enter,500,330,yes
-1,Option1,Page1,,Option 1,945,100,yes
-2,Option2,Page1,,Option 2,945,200,yes
-3,Option3,Page1,,Option 3,945,300,yes
-4,Super,Page2,,Super Involved,945,100,yes
-5,Very,Page2,,Very Involved ,945,200,yes
-6,Opt,Page2,,Opt Out ,945,300,yes
-7,Both,Page3,,I want both,945,100,yes
-8,Opt1,Page3,,Opt Out ,945,200,yes
-9,Both1,Page4,,I want both,945,100,yes
-10,Opt2,Page4,,Opt Out ,945,200,yes
-11,Back,Page5,,Tell Lenny to back off ,945,100,yes
-12,Nothing,Page5,,Do nothing ,945,200,yes
-13,Ignore,Page6,,Ignore Appliances ,945,100,yes
-14,Upgrade,Page6,,Upgrade Appliances ,945,200,yes
-15,Call,Page7,,Call company ,945,100,yes
-16,Give,Page7,,Give up ,945,200,yes
-17,Stay,Page8,,Stay on hold ,945,100,yes
-18,Fridge,Page8,,Ignore the Fridge ,945,200,yes
-19,Uninstall,Page9,,Deinstall it ,945,100,yes
-20,Lenny,Page9,,Accept Lenny ,945,200,yes
-21,Question,Page10,,?,945,100,yes
-22,Nothing2,Page10,,Do nothing ,945,200,yes
-23,Listen,Page11,,Listen to Lenny,945,100,yes
-24,Money,Page11,,Pay the money ,945,200,yes
-25,StartOver1,Ending1,,Start Over,500,500,yes
-26,StartOver2,Ending2,,Start Over,500,500,yes
-27,StartOver3,Ending3,,Start Over,500,500,yes
-28,StartOver4,Ending4,,Start Over,500,500,yes
-29,StartOver5,Ending5,,Start Over,500,500,yes
+1,Continue,Charaters,,Contiune,500,330,yes
+2,Option1,Page1,,Option1,945,100,yes
+3,Option2,Page1,,Option2,945,200,yes
+4,Option3,Page1,,Option3,945,300,yes
+5,Super,Page2,,Super Involved,945,100,yes
+6,Very,Page2,,Very Involved ,945,200,yes
+7,Opt,Page2,,Opt Out,945,300,yes
+8,Both,Page3,,I want both,945,100,yes
+9,Opt1,Page3,,Opt Out ,945,200,yes
+10,Both1,Page4,,I want both,945,100,yes
+11,Opt2,Page4,,Opt Out ,945,200,yes
+12,Back,Page5,,Tell Lenny to back off ,945,100,yes
+13,Nothing,Page5,,Do nothing ,945,200,yes
+14,Ignore,Page6,,Ignore Appliances ,945,100,yes
+15,Upgrade,Page6,,Upgrade Appliances ,945,200,yes
+16,Call,Page7,,Call company ,945,100,yes
+17,Give,Page7,,Give up ,945,200,yes
+18,Stay,Page8,,Stay on hold ,945,100,yes
+19,Fridge,Page8,,Ignore the Fridge ,945,200,yes
+20,Uninstall,Page9,,Deinstall it ,945,100,yes
+21,Lenny,Page9,,Accept Lenny ,945,200,yes
+22,Question,Page10,,?,945,100,yes
+23,Nothing2,Page10,,Do nothing ,945,200,yes
+24,Listen,Page11,,Listen to Lenny,945,100,yes
+25,Money,Page11,,Pay the money ,945,200,yes
+26,StartOver1,Ending1,,StartOver1,500,500,yes
+27,StartOver2,Ending2,,StartOver2,500,500,yes
+28,StartOver3,Ending3,,StartOver3,500,500,yes
+29,StartOver4,Ending4,,StartOver4,500,500,yes
+30,StartOver5,Ending5,,StartOver5,500,500,yes

@@ -5,11 +5,6 @@ code by  Scott Kildall
 
   Uses the p5.2DAdventure.js class 
   
-------------------------------------------------------------------------------------
-	To use:
-	Add this line to the index.html
-
-  <script src="p5.2DAdventure.js"></script>
 ***********************************************************************************/
 
 // adventure manager global  
@@ -25,62 +20,60 @@ var clickables;           // an array of clickable objects
 
 
 // indexes into the clickable array (constants) 
-
 const cl_Enter = 0;
-const cl_Option1 = 1;
-const cl_Option2 = 2; 
-const cl_Option3 = 3;
-const cl_Super = 4;
-const cl_Very = 5;
-const cl_Opt = 6;
-const cl_Both = 7;
-const cl_Opt1 = 8;
-const cl_Both1 = 9;
-const cl_Opt2 = 10;
-const cl_Back = 11;
-const cl_Nothing = 12;
-const cl_Ignore = 13;
-const cl_Upgrade = 14;
-const cl_Call = 15;
-const cl_Give = 16;
-const cl_Stay = 17;
-const cl_Fridge = 18
-const cl_Uninstall = 19;
-const cl_Lenny = 20;
-const cl_Question = 21; 
-const cl_Nothing2 = 22;
-const cl_Listen = 23; 
-const cl_Money = 24; 
-const cl_StartOver1 = 25;
-const cl_StartOver2 = 26;
-const cl_StartOver3 = 27; 
-const cl_StartOver4 = 28;
-const cl_StartOver5 = 29; 
-
+const cl_Charaters = 1;
+const cl_Option1 = 2;
+const cl_Option2 = 3; 
+const cl_Option3 = 4;
+const cl_Super = 5;
+const cl_Very = 6;
+const cl_Opt = 7;
+const cl_Both = 8;
+const cl_Opt1 = 9;
+const cl_Both1 = 10;
+const cl_Opt2 = 11;
+const cl_Back = 12;
+const cl_Nothing = 13;
+const cl_Ignore = 14;
+const cl_Upgrade = 15;
+const cl_Call = 16;
+const cl_Give = 17;
+const cl_Stay = 18;
+const cl_Fridge = 19
+const cl_Uninstall = 20;
+const cl_Lenny = 21;
+const cl_Question = 22; 
+const cl_Nothing2 = 23;
+const cl_Listen = 24; 
+const cl_Money = 25; 
+const cl_StartOver1 = 26;
+const cl_StartOver2 = 27;
+const cl_StartOver3 = 28; 
+const cl_StartOver4 = 29;
+const cl_StartOver5 = 30; 
 
 // room indices - look at adventureManager
 const Splash = 0;
-const Page1 = 1;
-const Page2 = 2;
-const Page3 = 3;
-const Page4 = 4;
-const Page5 = 5;
-const Page6 = 6;
-const Page7 = 7;
-const Page8 = 8;
-const Page9 = 9;
-const Page10 = 10;
-const Page11 = 11;
-const Ending1 = 12;
-const Ending2 = 13;
-const Ending3 = 14;
-const Ending4 = 15;
-const Ending5 = 16;
-
+const Charaters = 1;
+const Page1 = 2;
+const Page2 = 3;
+const Page3 = 4;
+const Page4 = 5;
+const Page5 = 6;
+const Page6 = 7;
+const Page7 = 8;
+const Page8 = 9;
+const Page9 = 10;
+const Page10 = 11;
+const Page11 = 12;
+const Ending1 = 13;
+const Ending2 = 14;
+const Ending3 = 15;
+const Ending4 = 16;
+const Ending5 = 17;
 
 let headlineFont;
 let bodyFont;
-
 
 // Allocate Adventure Manager with states table and interaction tables
 function preload() {
@@ -119,8 +112,9 @@ function draw() {
 
   // don't draw them on first few screens
   if( adventureManager.getStateName() === "splash.png" ||
-      adventureManager.getStateName() === "page1.png" ||
-      adventureManager.getStateName() === "page2.png" ) {
+      adventureManager.getStateName() === "charaters.png" ||
+      adventureManager.getStateName() === "page1.png" 
+            ) {
     ;
   }
   
@@ -188,6 +182,7 @@ function setupClickables() {
   clickables[27].onPress = clickableButtonPressed;
   clickables[28].onPress = clickableButtonPressed;
   clickables[29].onPress = clickableButtonPressed;
+  clickables[30].onPress = clickableButtonPressed;
 }
 
 // tint when mouse is over
